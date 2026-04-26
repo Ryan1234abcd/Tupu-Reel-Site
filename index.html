@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tupureel — Community Landscape Photopoint Monitoring</title>
+  <meta name="description" content="Tupureel is a free, open-source photopoint monitoring service for community landscape regeneration in New Zealand. Contribute photos by email and watch your land come alive through automatic timelapse." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── Navigation ──────────────────────────────────────── -->
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="container">
+      <a href="#hero" class="nav-brand">Tupureel</a>
+      <ul class="nav-links">
+        <li><a href="#how-it-works">How it works</a></li>
+        <li><a href="#register">Register</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ── Hero ────────────────────────────────────────────── -->
+  <section id="hero">
+    <div class="container">
+      <span class="hero-eyebrow">Free &amp; Open Source &middot; New Zealand</span>
+      <h1>Watch your land come back to life</h1>
+      <p class="hero-lead">
+        Tupureel is a free, community-powered photopoint monitoring service.
+        Groups set up camera stations at key spots in their landscape, community
+        members contribute photos by email, and Tupureel automatically weaves
+        those repeat photographs into timelapses that reveal the slow, hopeful
+        story of regeneration.
+      </p>
+      <a href="#register" class="btn-primary">Register your group</a>
+    </div>
+  </section>
+
+  <!-- ── How it works ────────────────────────────────────── -->
+  <section id="how-it-works">
+    <div class="container">
+      <h2>How it works</h2>
+      <p class="section-sub">Three simple steps — no specialist equipment needed.</p>
+      <div class="steps-grid">
+
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <h3>Set up a photopoint station</h3>
+          <p>
+            Choose a spot in your landscape — a hillside, a waterway, a revegetation
+            planting. Mark the exact camera position so every future photo is taken
+            from the same point. A fixed post, a notch in a fence, or a painted rock
+            all work well.
+          </p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <h3>Community members email photos</h3>
+          <p>
+            Anyone visiting the site takes a photo from the marked position and emails
+            it to your station's unique address. No app, no account, no upload portal
+            required — just an ordinary email with the photo attached.
+          </p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <h3>Tupureel generates your timelapse</h3>
+          <p>
+            Tupureel aligns, sorts, and assembles your contributed photos into a
+            timelapse video automatically. Watch seasons change, plantings establish,
+            waterways clear, and wildlife return — one frame at a time.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Register ────────────────────────────────────────── -->
+  <section id="register">
+    <div class="container">
+      <h2>Register your group</h2>
+      <p class="section-sub">
+        Tell us about your community and the landscape you are watching over.
+        We will be in touch to get your camera stations set up.
+      </p>
+
+      <form
+        class="reg-form"
+        action="https://formspree.io/f/PLACEHOLDER"
+        method="POST"
+      >
+        <div class="form-group">
+          <label for="group-name">Group name <span aria-hidden="true">*</span></label>
+          <input
+            type="text"
+            id="group-name"
+            name="group_name"
+            placeholder="e.g. Waikato Awa Restoration Trust"
+            required
+            autocomplete="organization"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="contact-name">Contact name <span aria-hidden="true">*</span></label>
+          <input
+            type="text"
+            id="contact-name"
+            name="contact_name"
+            placeholder="Your full name"
+            required
+            autocomplete="name"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="contact-email">Contact email <span aria-hidden="true">*</span></label>
+          <input
+            type="email"
+            id="contact-email"
+            name="contact_email"
+            placeholder="you@example.com"
+            required
+            autocomplete="email"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="location">Location / region <span aria-hidden="true">*</span></label>
+          <input
+            type="text"
+            id="location"
+            name="location"
+            placeholder="e.g. Hawke's Bay, Canterbury, Northland…"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="description">Landscape being monitored <span aria-hidden="true">*</span></label>
+          <textarea
+            id="description"
+            name="description"
+            rows="4"
+            placeholder="Describe the landscape, what is being restored or protected, and why photopoint monitoring matters for your site."
+            required
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="station-count">Number of camera stations <span aria-hidden="true">*</span></label>
+          <input
+            type="number"
+            id="station-count"
+            name="station_count"
+            min="1"
+            max="999"
+            placeholder="e.g. 3"
+            required
+          />
+          <p class="form-hint">How many distinct photopoints do you plan to set up?</p>
+        </div>
+
+        <div class="form-submit">
+          <button type="submit" class="btn-primary">Send registration &rarr;</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ── About ────────────────────────────────────────────── -->
+  <section id="about">
+    <div class="container">
+      <h2>About Tupureel</h2>
+      <div class="about-body">
+        <p>
+          Tupureel began as a small experiment: could the humble, shareable photograph
+          become a tool for community science and landscape stewardship? Repeat
+          photography — taking a photo from exactly the same spot, over and over,
+          across months and years — is one of the most powerful and accessible ways
+          to document ecological change. Tupureel makes that practice easy for any
+          community group, anywhere in Aotearoa New Zealand.
+        </p>
+        <p>
+          The service is entirely free to use. There is no subscription, no advertising,
+          and no data sold. The code that runs Tupureel is open to anyone to read,
+          fork, improve, and deploy.
+        </p>
+
+        <div class="licence-badge">
+          Released under the <strong>MIT Licence</strong> &mdash; free to use,
+          modify, and distribute, with attribution.
+        </div>
+
+        <p>
+          Source code, documentation, and issue tracking live on GitHub. Contributions
+          &mdash; bug reports, feature ideas, code, or translations &mdash; are warmly
+          welcomed.
+        </p>
+        <p>
+          <a href="https://github.com/ryan1234abcd/tupu-reel-site" target="_blank" rel="noopener noreferrer">
+            View the Tupureel repository on GitHub &rarr;
+          </a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ───────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>
+        &copy; Tupureel contributors &middot;
+        <a href="https://github.com/ryan1234abcd/tupu-reel-site" target="_blank" rel="noopener noreferrer">GitHub</a>
+        &middot; MIT Licence &middot; Aotearoa New Zealand
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
